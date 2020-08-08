@@ -1,0 +1,33 @@
+
+modLoader="javafml" #mandatory
+
+loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+
+license="All rights reserved"
+issueTrackerURL="http://my.issue.tracker/" #optional
+[[mods]] #mandatory
+modId="amenities" #mandatory
+version="1.16.1-1.0.0" #mandatory
+displayName="Amenities" #mandatory
+updateJSONURL="http://myurl.me/" #optional
+displayURL="http://example.com/" #optional
+logoFile="amenities.png" #optional
+credits="Minecraft Abnormals" #optional
+authors="AvocadoSpud, Shock Micro, Evo" #optional
+description='''
+Adds vanilla style furniture.
+
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.amenities]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[32,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.amenities]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.1]"
+    ordering="NONE"
+    side="BOTH"

@@ -7,8 +7,8 @@ license="All rights reserved"
 issueTrackerURL="http://my.issue.tracker/" #optional
 [[mods]] #mandatory
 modId="amenities" #mandatory
-version="${file.jarVersion}" #mandatory
-displayName="Example Mod" #mandatory
+version="1.16.1-1.0.0" #mandatory
+displayName="Amenities" #mandatory
 updateJSONURL="http://myurl.me/" #optional
 displayURL="http://example.com/" #optional
 logoFile="amenities.png" #optional
