@@ -12,8 +12,8 @@ displayName="Example Mod" #mandatory
 updateJSONURL="http://myurl.me/" #optional
 displayURL="http://example.com/" #optional
 logoFile="amenities.png" #optional
-credits="Thanks for this example mod goes to Java" #optional
-authors="Love, Cheese and small house plants" #optional
+credits="Minecraft Abnormals" #optional
+authors="AvocadoSpud, Shock Micro, Evo" #optional
 description='''
 Adds vanilla style furniture.
 
