@@ -1,6 +1,7 @@
 package com.avocadospud.amenities;
 
 
+import com.avocadospud.amenities.util.RegistryHandler;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -18,15 +19,15 @@ public class Amenities
 {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "amenities";
 
     public Amenities() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-
-        // Register the doClientStuff method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
-        // Register ourselves for server and other game events we are interested in
+        RegistryHandler.init();
+
         MinecraftForge.EVENT_BUS.register(this);
     }
 
