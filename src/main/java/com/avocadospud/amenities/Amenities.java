@@ -3,6 +3,8 @@ package com.avocadospud.amenities;
 
 import com.avocadospud.amenities.util.RegistryHandler;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -37,5 +39,6 @@ public class Amenities
 
     private void doClientStuff(final FMLClientSetupEvent event)
     {
+        RenderTypeLookup.setRenderLayer(RegistryHandler.OAK_TABLE.get(), RenderType.getCutout());
     }
 }
