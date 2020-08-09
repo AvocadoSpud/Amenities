@@ -1,6 +1,7 @@
 package com.avocadospud.amenities.util;
 
 import com.avocadospud.amenities.Amenities;
+import com.avocadospud.amenities.blocks.BlockItemBase;
 import com.avocadospud.amenities.blocks.OakTableBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -23,8 +24,8 @@ public class RegistryHandler {
     // Items
 
     // Blocks
-    public static final RegistryObject<Block> OAK_TABLE_BLOCK = BLOCKS.register("oak_table", OakTableBlock::new);
+    public static final RegistryObject<Block> OAK_TABLE = BLOCKS.register("oak_table", OakTableBlock::new);
 
     // Block Items
-
+    public static final RegistryObject<Item> OAK_TABLE_ITEM = ITEMS.register("oak_table", () -> new BlockItemBase(OAK_TABLE.get()));
 }
